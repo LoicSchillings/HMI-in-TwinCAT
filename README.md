@@ -28,7 +28,7 @@ This README explains how to:
 
 This package provides the tools needed to develop a HMI project in TwinCAT on your engineering PC.
 
-![TE2000 in Package Manager](docs/images/TE2000.png)
+![TE2000 in Package Manager](images/TE2000.jpg)
 
 
 ## 2. Installing TwinCAT HMI Server on the PLC (Windows)
