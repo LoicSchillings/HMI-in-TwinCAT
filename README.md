@@ -49,7 +49,7 @@ On the **PLC / IPC**:
 
 1. Open the link below:
 
-   https://www.beckhoff.com/en-en/products/automation/twincat/tfxxxx-twincat-3-functions/tf2xxx-hmi/tf2000.html?
+   https://www.beckhoff.com/en-en/products/automation/twincat/tfxxxx-twincat-3-functions/tf2xxx-hmi/tf2000.html
 
    Under "Documentation and downloads" -> "Software and tools"
    Download the .exe:
@@ -89,4 +89,65 @@ On the **PLC / IPC**:
    But always check which ports Windows allows you to use freely.
 
    We'll come back to this.
+
+---
+
+## 3. Setting up Windows networking rules
+
+According to which ports you used in your server, the Windows Firewall might block network traffic for that port.
+
+To prevent this:
+
+Open "Windows Security"
+   -> "Firewall & network protection"
+   -> "Advanced settings"
+   -> "Inboud rules"
+
+
+Find these 4 rules:
+
+![TF2000 in Package Manager](images/RULES.jpg)
+
+
+Then click the rule and click "Properties".
+This window should open:
+
+![TF2000 in Package Manager](images/ACTION.jpg)
+
+Make sure "Allow the connection" is selected.
+
+
+If this doesnt work or the rules aren't there,
+
+try this:
+
+
+Click "New rule"
+
+![TF2000 in Package Manager](images/WINDOW1.jpg)
+
+Click "Port"
+
+Then enter this:
+
+![TF2000 in Package Manager](images/WINDOW2.jpg)
+
+Click "Allow the connection"
+
+Then make sure the "Public" domain is unchecked:
+
+![TF2000 in Package Manager](images/WINDOW3.jpg)
+
+This is to stop connections if the devices is in a public network.
+
+
+NOTE:
+
+Do the following step only if everything is done and you still cant connect to the HMI server.
+
+Add the same "New rules" for those ports to the "Outbound rules"
+
+---
+
+## 4. Creating a TwinCAT HMI project
 
