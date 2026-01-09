@@ -237,6 +237,10 @@ If the server is published you should see this open in your browser or on the PL
 
 ![TF2000 in Package Manager](images/PUBLISHED.jpg)
 
+If you see this you are done with the template, you can edit your PLC and HMI project now.
+
+If your browser opens on your PC and you get a connection error try opening the link in EDGE, it will give a warning but expand it and continue to the site. Its just a safety warning.
+
 
 In the file "Desktop.view" you can see what will be displayed on the server's screen or browser.
 
