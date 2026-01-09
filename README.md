@@ -4,8 +4,9 @@ This README explains how to:
 
 1. Install **TwinCAT HMI Engineering** packages on a PC for TwinCAT
 2. Install the **TwinCAT HMI Server** on a PLC / IPC running Windows
-3. Create a basic HMI project
-4. Connect the HMI to TwinCAT / PLC using ADS
+3. Setting up Windows networking rules
+4. Creating a TwinCAT HMI project
+   Extra
 
 ---
 
@@ -41,7 +42,7 @@ This isn't a necessary package but it can be usefull if you dont have a Beckhoff
 
 ---
 
-## 2. Installing TwinCAT HMI Server on the PLC (Windows)
+## 2. Installing TwinCAT HMI Server on a PLC / IPC running Windows
 
 ### 2.1 Install the HMI Server package
 
